@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@theme inline {
+  --color-background:#f3efe6; --color-foreground:#263238; --color-paper:#f3efe6; --color-ink:#263238; --color-primary:#53656e; --color-primary-foreground:#fffefa; --color-muted:#e8e3d8; --color-muted-foreground:#68747a; --color-border:#d8d2c7; --color-input:#cfc8bc; --color-ring:#53656e; --color-olive:#a8ad8e; --color-peach:#e5b49c; --color-blue:#91a7b0; --color-warning:#b07845; --color-warning-foreground:#6c401d;
+  --font-sans:"Avenir Next",Avenir,"Segoe UI",sans-serif; --font-editorial:Charter,"Bitstream Charter",Georgia,serif;
+  --radius-control:.5rem; --radius-surface:.875rem; --shadow-board:0 24px 70px rgb(59 54 46 / .13),0 2px 8px rgb(59 54 46 / .08);
+}
+*{box-sizing:border-box;scrollbar-color:#91a0a5 transparent;scrollbar-width:thin}*::-webkit-scrollbar{width:10px;height:10px}*::-webkit-scrollbar-track{background:transparent}*::-webkit-scrollbar-thumb{background:#91a0a5;border:3px solid transparent;border-radius:999px;background-clip:padding-box}*::-webkit-scrollbar-thumb:hover{background:#687b83;background-clip:padding-box}
+html{background:var(--color-background);color:var(--color-foreground)}body{margin:0;min-height:100dvh}::selection{background:#a8ad8e;color:#263238}
+.paper-noise{background-image:radial-gradient(rgb(38 50 56 / .045) .55px,transparent .55px);background-size:5px 5px}
+@media (prefers-reduced-motion:no-preference){.view-enter{animation:enter .35s cubic-bezier(.2,.8,.2,1)}@keyframes enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}}
+@media (forced-colors:active){*{scrollbar-color:auto}.focusable{outline:1px solid CanvasText}}
