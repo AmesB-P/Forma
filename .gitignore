@@ -7,3 +7,5 @@ out/
 .env*
 !.env.example
 premium-audit.json
+
+.vercel
