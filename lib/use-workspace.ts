@@ -21,7 +21,8 @@ export function useWorkspace() {
         const savedWorkspace = window.localStorage.getItem(STORAGE_KEY);
         if (savedWorkspace) {
           const parsedWorkspace = JSON.parse(savedWorkspace) as StoredWorkspace;
-          if (parsedWorkspace.collections?.length) setCollections(parsedWorkspace.collections);
+          if (parsedWorkspace.collections?.length)
+            setCollections(parsedWorkspace.collections);
           if (parsedWorkspace.items?.length) setItems(parsedWorkspace.items);
         }
       } catch {
@@ -36,20 +37,26 @@ export function useWorkspace() {
 
   useEffect(() => {
     if (isHydrated) {
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify({ collections, items }));
+      window.localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({ collections, items }),
+      );
     }
   }, [collections, isHydrated, items]);
 
   return {
     collections,
     items,
-    visibleCollections: collections.filter((collection) => !collection.archived),
+    visibleCollections: collections.filter(
+      (collection) => !collection.archived,
+    ),
     createCollection(title: string, description: string) {
       setCollections((current) => [
         {
           id: `collection-${Date.now()}`,
           title,
-          description: description || "A new place for the references worth keeping.",
+          description:
+            description || "A new place for the references worth keeping.",
           pinned: false,
           updatedAt: "Just now",
         },
