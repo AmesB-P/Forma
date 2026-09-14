@@ -1,0 +1,10 @@
+.git
+.next
+.vercel
+node_modules
+.pnpm-store
+*.log
+.env*
+!.env.example
+premium-audit.json
+tsconfig.tsbuildinfo

@@ -1,4 +1,10 @@
-import { FileText, Image as ImageIcon, Link2, Palette, Type } from "lucide-react";
+import {
+  FileText,
+  Image as ImageIcon,
+  Link2,
+  Palette,
+  Type,
+} from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { ItemType } from "@/lib/data";
 
