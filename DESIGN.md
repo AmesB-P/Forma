@@ -1,20 +1,23 @@
 ---
 version: alpha
 colors:
-  paper: "#F3EFE6"
-  ink: "#263238"
-  navigation: "#53656E"
-  olive: "#A8AD8E"
-  peach: "#E5B49C"
-  white: "#FFFEFA"
+  canvas: "#A6ACA4"
+  surface: "#F4F4EF"
+  navigation: "#EAECE5"
+  ink: "#343A31"
+  mutedInk: "#70796B"
+  deepTile: "#343E2F"
+  deepTileText: "#EDF0DF"
+  softOlive: "#CACDC1"
+  paper: "#E4DBCA"
 typography:
   sans:
-    fontFamily: '"Avenir Next", Avenir, "Segoe UI", sans-serif'
+    fontFamily: '"Manrope Variable", Manrope, "Segoe UI", sans-serif'
   editorial:
-    fontFamily: 'Charter, "Bitstream Charter", Georgia, serif'
+    fontFamily: 'Georgia, serif'
 rounded:
   control: "0.5rem"
-  surface: "0.875rem"
+  surface: "0.75rem"
 spacing:
   unit: "0.25rem"
   section: "2rem"
@@ -22,41 +25,41 @@ components:
   button:
     borderRadius: "0.5rem"
   card:
-    borderRadius: "0.875rem"
+    borderRadius: "0.75rem"
 ---
 
 # Forma design direction
 
 ## Overview
 
-Forma should feel like opening a well-kept studio drawer: warm paper, small handwritten decisions, and enough quiet around each reference to see it properly. This is a product surface, not a marketing site. The memorable signature is the collection board: mixed-scale references align to a disciplined grid but keep a faint tactile offset. Avoid SaaS KPI dashboards, glassmorphism, gradients, and decorative productivity language.
+Forma is a calm, personal creative-reference workspace for collecting images, links, notes, color, and type. It should feel editorial and tactile: a gray-green field around a quiet off-white working surface, with enough empty space to browse references without turning the product into a dashboard. The collection board is the signature; it uses a disciplined responsive grid with varied reference kinds, not ornamental decoration.
 
-Runtime ownership uses Model B: `app/globals.css` is canonical, and this file mirrors its durable semantic tokens. Shared components consume those variables.
+Runtime ownership uses Model B: `app/globals.css` is canonical. This document mirrors its durable semantic tokens, and shared components consume those variables.
 
 ## Colors
 
-Paper is the application ground; white is reserved for lifted working surfaces. Blue-gray carries navigation and focus. Olive and peach identify reference families, never status by color alone. Ink remains softened charcoal rather than pure black.
+Canvas frames the desktop workspace. Surface is the off-white working area and lifted cards. Navigation is a pale secondary panel, while deep tile is reserved for the primary action and active navigation. Olive, paper, and muted blue-gray describe reference material rather than status.
 
 ## Typography
 
-Interface copy uses Avenir Next with Segoe UI fallback. Collection titles use Charter/Georgia as an editorial counterpoint. Sentence case only; compact labels are not letter-spaced.
+Manrope Variable is the UI voice for controls, labels, and body copy. Georgia is a quiet editorial counterpoint for collection titles and long reference notes. Use sentence case and compact labels without tracking.
 
 ## Layout
 
-Desktop uses a 248px rail and a fluid work area. Tablet narrows the rail; mobile converts it to a quiet bottom dock. Content is left aligned with a readable maximum width. Collection items use a responsive masonry-like grid with deliberate span variants.
+Desktop uses a 248px navigation panel inside a gray-green frame and a flexible off-white workspace. Content is capped at 1184px with 56px desktop, 32px tablet, and 20px mobile gutters. Collections use a responsive three-to-four-column grid with 16px gaps. Mobile keeps a compact top bar with direct access to search and adding a reference; it never squeezes the desktop navigation into the viewport.
 
 ## Elevation & Depth
 
-Static surfaces are separated by tone and a 1px translucent rule. Only active overlays and the working board use restrained shadow. No stacked card shadows.
+The workspace panel receives one restrained shadow against the canvas. Cards are primarily separated by tone and a one-pixel rule. Avoid stacked shadows, gradients, glass effects, and decorative status treatments.
 
 ## Shapes
 
-Controls use an 8px radius; larger working surfaces use 14px. Reference imagery may use 10px. Pills are reserved for tags and filters.
+Reference tiles use 8px corners. Workspace panels use 12px corners. Pills are limited to filters and tags.
 
 ## Components
 
-Buttons keep a compact studio-tool scale and visible blue-gray focus ring. Item tiles expose type in text or icon as well as color. Dialogs become near-full-height sheets on narrow screens.
+Buttons use compact, direct labels and a visible deep-ink focus ring. Every item exposes its type through text or an icon as well as color. Dialogs are authored, focus-managed, and constrained to the visual viewport.
 
 ## Do's and Don'ts
 
-Do preserve empty space, uneven content rhythm, direct verbs, visible focus, and restrained motion. Do not add charts, streaks, collaboration, fake metrics, loud toasts, or unbounded animation.
+Do preserve quiet space, tactile material cues, real navigation, and useful empty/error states. Do not add charts, collaboration claims, gamification, loud notifications, or fabricated integrations.

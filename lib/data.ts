@@ -8,6 +8,7 @@ export type FormaItem = {
   note: string;
   tags: string[];
   createdAt: string;
+  updatedAt: string;
   tone?: "olive" | "peach" | "blue" | "paper";
 };
 export type Collection = {
@@ -54,11 +55,11 @@ export const items: FormaItem[] = [
     collectionId: "quiet-homes",
     type: "image",
     title: "Linen chair in morning light",
-    content:
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=85",
+    content: "/images/linen-chair.png",
     note: "The room feels settled because every edge is soft, but nothing is precious.",
     tags: ["material", "light"],
     createdAt: "Sep 14, 2026",
+    updatedAt: "Sep 14, 2026",
     tone: "paper",
   },
   {
@@ -70,6 +71,7 @@ export const items: FormaItem[] = [
     note: "A muted green that can carry a whole quiet surface.",
     tags: ["palette"],
     createdAt: "Sep 13, 2026",
+    updatedAt: "Sep 13, 2026",
     tone: "olive",
   },
   {
@@ -82,6 +84,7 @@ export const items: FormaItem[] = [
     note: "A prompt for the layout study.",
     tags: ["idea", "layout"],
     createdAt: "Sep 12, 2026",
+    updatedAt: "Sep 12, 2026",
     tone: "peach",
   },
   {
@@ -93,6 +96,7 @@ export const items: FormaItem[] = [
     note: "Natural texture without the usual rustic shorthand.",
     tags: ["studio", "reference"],
     createdAt: "Sep 9, 2026",
+    updatedAt: "Sep 9, 2026",
     tone: "blue",
   },
   {
@@ -104,6 +108,7 @@ export const items: FormaItem[] = [
     note: "Strong enough for a cover, soft enough for notes.",
     tags: ["serif", "display"],
     createdAt: "Sep 8, 2026",
+    updatedAt: "Sep 8, 2026",
     tone: "paper",
   },
   {
@@ -115,6 +120,7 @@ export const items: FormaItem[] = [
     note: "Weathered rather than muted.",
     tags: ["palette", "signage"],
     createdAt: "Sep 6, 2026",
+    updatedAt: "Sep 6, 2026",
     tone: "blue",
   },
   {
@@ -127,6 +133,7 @@ export const items: FormaItem[] = [
     note: "Keep the radius functional.",
     tags: ["interaction"],
     createdAt: "Sep 5, 2026",
+    updatedAt: "Sep 5, 2026",
     tone: "peach",
   },
 ];
